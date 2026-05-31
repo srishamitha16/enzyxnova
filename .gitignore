@@ -1,0 +1,27 @@
+# Node
+node_modules/
+pnpm-lock.yaml
+yarn.lock
+package-lock.json
+/dist
+/.npm
+/*.log
+
+# Python
+backend/__pycache__/
+venv/
+.venv/
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+*.db
+
+# Environment
+.env
+.env.*
+
+# Editor
+.vscode/
+.idea/
+.DS_Store

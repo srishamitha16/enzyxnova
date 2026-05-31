@@ -1,0 +1,5 @@
+enzyme_id,enzyme_name,organism,ec_number,sequence_length,molecular_weight_kDa,pH,temperature_C,mutation,substrate,cofactor,deltaG_kcal_mol,deltaH_kcal_mol,deltaS_cal_molK,melting_temp_C,stability_score,binding_affinity_kcal_mol,kcat,km_mM,catalytic_efficiency,active_site_residues,secondary_structure_alpha,secondary_structure_beta,solvent_accessibility,hydrophobicity_index,isoelectric_point,pocket_volume_A3,ligand_name,ligand_smiles,mutation_impact,stability_class
+
+ENZ0001,Lipase_A,Bacillus subtilis,3.1.1.3,312,34.5,7.2,37,A45V,Triglyceride,Ca2+,-7.8,-42.1,112.4,61.5,0.91,-8.4,145.2,0.35,414.8,SER145;ASP201;HIS258,48.2,19.1,0.67,0.42,6.8,412.5,Oleic_Acid,CCCCCCCC=CCCCCCCCC(=O)O,Moderate,Stable
+ENZ0002,Protease_X,Escherichia coli,3.4.21.62,428,49.2,6.8,30,G102D,Casein,Zn2+,-5.6,-38.5,104.7,58.9,0.76,-7.2,210.5,0.62,339.5,HIS57;ASP102;SER195,51.4,17.5,0.54,0.36,7.1,498.1,Peptide_A,NCC(=O)NCC(=O)O,High,Moderately Stable
+ENZ0003,Amylase_Z,Aspergillus niger,3.2.1.1,512,58.7,5.5,50,L210P,Starch,Mg2+,-9.2,-48.7,121.5,72.4,0.95,-9.1,322.8,0.28,1152.8,ASP206;GLU230;ASP297,44.7,23.6,0.61,0.48,5.9,625.7,Maltose,OCC1OC(O)C(O)C(O)C1O,Low,Highly Stable

@@ -1,0 +1,27 @@
+services:
+  - type: web
+    name: enzyxnova-backend
+    env: python
+    region: oregon
+    plan: starter
+    buildCommand: "cd backend && pip install --upgrade pip && pip install -r requirements.txt"
+    startCommand: "cd backend && python -m uvicorn app.main:app --host 0.0.0.0 --port $PORT"
+    envVars:
+      - key: DATABASE_URL
+        value: "sqlite:///./enzyxnova.db"
+      - key: BACKEND_ALLOW_ORIGINS
+        scope: stage,prod
+      - key: ENVIRONMENT
+        value: "production"
+
+  - type: static
+    name: enzyxnova-frontend
+    env: static
+    region: oregon
+    plan: starter
+    buildCommand: "npm install && npm run build"
+    publishPath: "dist"
+    envVars: []
+    routes:
+      - path: "/api"
+        destination: "https://enzyxnova-backend.onrender.com"

@@ -3,37 +3,10 @@
   "version": "1.0.0",
   "private": true,
   "type": "module",
-  "main": "dist-electron/main.js",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview",
-    "electron-dev": "electron .",
-    "electron-build": "vite build && electron-builder",
-    "electron-builder": "electron-builder --win --publish never"
-  },
-  "build": {
-    "appId": "com.enzyxnova.app",
-    "productName": "EnzyXNova",
-    "directories": {
-      "buildResources": "assets",
-      "output": "dist-electron"
-    },
-    "files": [
-      "dist/**/*",
-      "dist-electron/**/*",
-      "node_modules/**/*"
-    ],
-    "win": {
-      "target": ["nsis", "portable"],
-      "icon": "assets/icon.png"
-    },
-    "nsis": {
-      "oneClick": false,
-      "allowToChangeInstallationDirectory": true,
-      "createDesktopShortcut": true,
-      "createStartMenuShortcut": true
-    }
+    "preview": "vite preview"
   },
   "dependencies": {
     "axios": "^1.6.0",
@@ -49,8 +22,6 @@
     "@types/react-dom": "^18.3.0",
     "@vitejs/plugin-react": "^4.3.1",
     "autoprefixer": "^10.4.19",
-    "electron": "^latest",
-    "electron-builder": "^latest",
     "postcss": "^8.4.40",
     "tailwindcss": "^3.4.5",
     "typescript": "^5.5.3",
